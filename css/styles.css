@@ -116,10 +116,13 @@ img {
 }
 
 .header-connect {
+  display: flex;
   margin-left: auto;
 }
 
 .header-address {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -154,6 +157,10 @@ img {
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/img-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -324,8 +331,12 @@ img {
   justify-content: center;
 }
 
-.team-soc-item + .team-soc-item {
+/* .team-soc-item + .team-soc-item {
   margin-left: 10px;
+} */
+
+.team-soc-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .team-soc-link {
@@ -455,8 +466,8 @@ img {
   margin-bottom: 30px;
 }
 
-.work-item:hover,
-.work-item:focus {
+.work-link:hover {
+  display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -575,7 +586,7 @@ img {
   align-items: center;
   width: 44px;
   height: 44px;
-  background-color: var(--first-color);
+  background-color: rgba(255, 255, 255, 0.1);
   color: var(--second-color);
   border-radius: 50%;
 }
