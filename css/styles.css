@@ -347,7 +347,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--first-color);
+  color: #afb1b8;
 }
 
 .team-soc-icon {
@@ -395,7 +395,7 @@ img {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  color: var(--first-color);
+  color: #afb1b8;
   padding: 16px 32px;
 }
 
